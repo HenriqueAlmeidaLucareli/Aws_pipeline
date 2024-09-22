@@ -27,11 +27,11 @@ jobs:
       - name: Relatorio do teste
         run: coverage report -m
 
-      # - name: Render Deploy Action
-      #   uses: johnbeynon/render-deploy-action@v0.0.8
-      #   with:
-      #     service-id: srv-crddqnrtq21c73d2d5ag
-      #     api-key: rnd_IcbrR2EIFa6apZawYZdu2bdNApCv
+      - name: Render Deploy Action
+        uses: johnbeynon/render-deploy-action@v0.0.8
+        with:
+          service-id: srv-cro11nij1k6c739dcj40
+          api-key: rnd_dGBC0PTik5PPSI2MhEG5l3Yo5TV2
 
       - name: Deploy no EC2 -AWS
         run: |
