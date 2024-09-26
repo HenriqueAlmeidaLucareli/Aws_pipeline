@@ -1,0 +1,40 @@
+cd Downloads
+
+chmod 400 "chave"
+--------------------------------------
+
+ssh -i "chave" ubuntu@ec2-54-81-132-236.compute-1.amazonaws.com
+
+---------------------------------------
+
+sudo apt-get update
+sudo apt-get upgrade
+sudo apt-get install -y python3
+sudo apt-get install -y python3-pip
+sudo apt-get install git
+
+----------------------------------------
+
+git clone https://github.com/Nisflei/RPA_Python
+/home/ubuntu/RPA_Python
+ 
+-----------------------------------------
+
+cd <arq_git>
+
+Ativar .ENV --------------------------------
+
+sudo apt-get install python3.12-venv
+python3 -m venv my_env
+source my_env/bin/activate
+
+pip3 install -r requirements.txt
+
+chmod 777 executar.sh
+chmod 777 iniciar.sh
+
+cd ..
+
+python app.py
+
+--agora toda vez que a pipeline for ativa ele vai alterar na pipeline 
